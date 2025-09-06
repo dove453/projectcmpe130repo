@@ -1,1 +1,27 @@
+class spot{
 
+private:
+size of parking lot
+int time limit hours
+int time limit minutes
+int time limit seconds
+boolean pay or not
+boolean empty or not
+
+public:
+
+constructor
+
+a bunch of setters and getters(for the debug)
+
+function to check if parking space is empty or not
+
+function to check if parking spot payed or not
+
+function to display time left
+
+
+
+
+
+};
