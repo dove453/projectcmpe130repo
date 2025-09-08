@@ -1,3 +1,10 @@
+overview:
+1. program asks login info
+2.check if user part of students in school
+3. then move to parking lot portion of the code
+4. ask user what they want to do(display available, ask for payment, implement fines)
+
+
 class spot{
 
 private:
@@ -7,12 +14,12 @@ int time limit minutes
 int time limit seconds
 boolean pay or not
 boolean empty or not
-
+float due
 public:
 
 constructor
 
-a bunch of setters and getters(for the debug)
+a bunch of setters and getters(for the debug and maybe for functions to use)
 
 function to check if parking space is empty or not
 
@@ -20,7 +27,31 @@ function to check if parking spot payed or not
 
 function to display time left
 
+function to display all parking lot info.
 
+};
+
+
+class student{
+
+private:
+first name;
+
+last name;
+
+int id;
+
+public:
+
+checker function;
+
+constructor
+
+getters and setters
+
+update function
+
+delete function
 
 
 
