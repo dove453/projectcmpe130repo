@@ -1,2 +1,16 @@
 //first prompt user to enter in login info
 //id and password
+//the user will enter in both first
+
+//so we need to check the password the user entered in is valid
+//password checker function that gets in a string 
+//string comparison
+//like check if the string match somehow(like make everything lowercase and compare)
+
+//then we go into the core functions of the program(payment-spot function, function that shows availability)
+
+//for parking lot we need to first initialize all the spots(and make their availability open)
+
+function that shows availability
+
+--so display all parking lots 
