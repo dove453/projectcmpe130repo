@@ -41,6 +41,8 @@ last name;
 
 int id;
 
+string password;
+
 public:
 
 checker function; <- login
