@@ -57,5 +57,9 @@ delete function
 
 implement useing vector
 
+operator overloading(=,<,>)
+
+
+
 
 };
