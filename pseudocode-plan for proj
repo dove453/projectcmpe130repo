@@ -11,6 +11,24 @@
 
 //for parking lot we need to first initialize all the spots(and make their availability open)
 
+--MAIN:
+
+first do login
+
+we need to initialize an array of spot objects
+int option=0;
+do{
+
+cout<<what option do you want to do, 0 is in program, 1 is show parking spots 2 is go in and pay, 3 is exit
+
+
+}while(option=0);
+
+
 function that shows availability
 
 --so display all parking lots 
+
+loop through all parking spots and display their attributes
+-note: we could ignore the show availability function by doing this
+
