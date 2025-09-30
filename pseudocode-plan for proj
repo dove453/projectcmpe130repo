@@ -13,7 +13,7 @@
 
 --MAIN:
 
-first do login
+first do login func
 
 we need to initialize an array of spot objects
 int option=0;
