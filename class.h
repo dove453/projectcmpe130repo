@@ -18,8 +18,7 @@ public:
 
 
 
-	void setsize(int in);
-	int getsize();
+	
 
 	void settimehour(int in);
 	int gettimehour();
