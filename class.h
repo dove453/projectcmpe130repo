@@ -2,7 +2,6 @@
 
 class spot {
 private:
-	int size;
 	int timelimithours;
 	int timelimitminutes;
 	int timelimitseconds;
@@ -14,11 +13,8 @@ public:
 	//base constructor
 	spot();
 	//constructor
-	spot(int a, int b, int c, int d, float f);
+	spot(int a, int b, int c, bool d, bool e, float f);
 
-
-
-	
 
 	void settimehour(int in);
 	int gettimehour();
@@ -42,4 +38,6 @@ public:
 };
 
 void showe(spot &in);
+
+
 
