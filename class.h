@@ -1,5 +1,7 @@
 #pragma once
-
+#include <iostream>
+#include <string.h>
+using namespace std;
 class spot {
 private:
 	int timelimithours;
@@ -34,7 +36,7 @@ public:
 	void setempty(bool in);
 	bool getempty();
 
-
+~spot();
 };
 
 class student {
@@ -60,6 +62,8 @@ public:
 
 	void setpassword(string in);
 	string getpassword();
+
+~student();
 };
 
 
