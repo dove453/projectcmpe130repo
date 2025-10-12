@@ -37,7 +37,30 @@ public:
 
 };
 
-void showe(spot &in);
+class student {
+private:
+	int id;
+	string last;
+	string first;
+	string password;
+
+public:
+	student();
+
+	student(int a, string b, string c, string d);
+
+	void setid(int in);
+	int getid();
+
+	void setlast(string in);
+	string getlast();
+
+	void setfirst(string in);
+	string getfirst();
+
+	void setpassword(string in);
+	string getpassword();
+};
 
 
 
