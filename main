@@ -1,1 +1,8 @@
+#include <iostream>
+#include "Header.h"  //this is what the header file will be declared with all the nice functions declarations
+
+int main()
+{
+    spot array[20];
+}
 
