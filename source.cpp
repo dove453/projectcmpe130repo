@@ -11,18 +11,22 @@ spot::spot() {
 	pay = false;
 	empty = false;
 	due = 0;
+	number = 0;
 }
 
-spot::spot(int a, int b, int c, bool d, bool e, float f) {
+spot::spot(int a, int b, int c, bool d, bool e, float f, int n) {
 	 timelimithours=a;
 	 timelimitminutes=b;
 	 timelimitseconds=c;
 	 pay=d;
 	 empty=e;
 	 due = f;
+	number = n;
 }
 
+spot::~spot() {
 
+}
 
 //hour
 void spot::settimehour(int in) {
@@ -67,6 +71,31 @@ void spot::setpay(bool in) {
 	pay = in;
 }
 
+//display function:
+void spot::displayspot() {
+	cout << "time left is: " << timelimithours
+		<< " hours, " <<timelimitminutes << " minutes, " <<timelimitseconds << " seconds."<<endl;
+
+	if (empty != false) {
+		cout << "the spot is currently not empty"<<endl;
+	}
+	else {
+		cout << "the spot is empty"<<endl;
+	}
+
+	cout << "you owe: " << due << " for this spot." << endl;
+
+	if (pay == true) {
+		cout << "you have paid for this spot and may leave" << endl;
+	}
+	else {
+		cout << "you have not paid for this spot yet. Please do so" << endl;
+	}
+
+
+}
+
+
 //*****student section********
 
 student::student() {
@@ -83,7 +112,9 @@ student::student(int a, string b, string c, string d) {
 	password = d;
 }
 
+student::~student() {
 
+}
 
 void student::setid(int in) {
 	id = in;
