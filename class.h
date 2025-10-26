@@ -10,6 +10,7 @@ private:
 	bool pay;
 	bool empty;
 	float due;
+	int number;
 
 public:
 	//base constructor
