@@ -16,7 +16,7 @@ public:
 	//base constructor
 	spot();
 	//constructor
-	spot(int a, int b, int c, bool d, bool e, float f);
+	spot(int a, int b, int c, bool d, bool e, float f, int n);
 
 
 	void settimehour(int in);
@@ -38,6 +38,9 @@ public:
 	bool getempty();
 
 ~spot();
+
+void displayspot();
+
 };
 
 class student {
