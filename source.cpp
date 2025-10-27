@@ -146,3 +146,8 @@ void student::setpassword(string in) {
 string student::getpassword() {
 	return password;
 }
+
+
+void student::displaystudent() {
+
+}
