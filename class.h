@@ -68,6 +68,8 @@ public:
 	string getpassword();
 
 ~student();
+
+void displaystudent();
 };
 
 
