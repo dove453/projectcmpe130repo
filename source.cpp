@@ -149,5 +149,8 @@ string student::getpassword() {
 
 
 void student::displaystudent() {
-
+cout << "this student's id is: " << id<<endl;
+cout << "the student's first name is: " << first << endl;
+cout << "the student's last name is: " << last << endl;
+cout << "the student's password is: " << password << endl;
 }
