@@ -33,6 +33,30 @@ for (int i = 0; i < 10; i++) {
 }
 
 
+ //initialize parking lot functions:
+ int input;
+ do {
+     cout << "type 1 for displaying the available parking spots, type 2 to reserve a parking spot, type 3 for payment"<<endl;
+     cin >> input;
+
+     switch(input){
+     case 1:
+         cout << "display function"<<endl;
+         break;
+
+     case 2:
+         cout << "reserve a parking spot"<<endl;
+         break;
+
+     case 3:
+         cout << "payment"<<endl;
+         break;
+     }
+
+
+ } while (1);
+
+
 return 0;
 }
 
