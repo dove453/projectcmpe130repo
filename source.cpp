@@ -71,6 +71,17 @@ void spot::setpay(bool in) {
 	pay = in;
 }
 
+
+//empty
+
+void spot::setempty(bool in) {
+	empty = in;
+}
+
+bool spot::getempty() {
+	return empty;
+}
+
 //display function:
 void spot::displayspot() {
 	cout << "time left is: " << timelimithours
