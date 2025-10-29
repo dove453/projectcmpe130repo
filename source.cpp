@@ -9,7 +9,7 @@ spot::spot() {
 	timelimitminutes = 0;
 	timelimitseconds = 0;
 	pay = false;
-	empty = false;
+	empty = true;
 	due = 0;
 	number = 0;
 }
