@@ -165,3 +165,9 @@ cout << "the student's first name is: " << first << endl;
 cout << "the student's last name is: " << last << endl;
 cout << "the student's password is: " << password << endl;
 }
+
+//out functions
+
+void reserve(spot obj) {
+
+}
