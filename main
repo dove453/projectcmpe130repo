@@ -50,7 +50,17 @@ for (int i = 0; i < 10; i++) {
          break;
 
      case 2:
-         cout << "reserve a parking spot"<<endl;
+        int in;
+bool inprocess = true;
+while (inprocess = true) {
+    cout << "type which spot you want to reserve:" << endl;
+    cin >> in;
+    while (in > 20) {
+        cout << "spot is not available, try again and enter the spot you want to reserve:" << endl;
+    }
+    if (array[in].getempty)
+
+}
          break;
 
      case 3:
