@@ -38,7 +38,7 @@ for (int i = 0; i < 10; i++) {
  do {
      cout << "type 1 for displaying the available parking spots, type 2 to reserve a parking spot, type 3 for payment"<<endl;
      cin >> input;
-
+     int rloop = 0;
      switch(input){
      case 1:
         for (int i = 0; i < 20; i++) {
@@ -51,15 +51,19 @@ for (int i = 0; i < 10; i++) {
 
      case 2:
         int in;
-bool inprocess = true;
-while (inprocess = true) {
+
+while (rloop == 0) {
     cout << "type which spot you want to reserve:" << endl;
     cin >> in;
     while (in > 20) {
         cout << "spot is not available, try again and enter the spot you want to reserve:" << endl;
     }
-    if (array[in].getempty)
+    if (array[in].getempty()==0){
+ cout << "spot is empty, reserving it";
+ reserve(array[in]);
+ rloop = 1;
 
+}
 }
          break;
 
