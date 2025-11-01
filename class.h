@@ -72,5 +72,5 @@ public:
 void displaystudent();
 };
 
-void reserve(spot obj);
+void reserve(spot& obj);
 
