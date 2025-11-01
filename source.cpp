@@ -168,6 +168,6 @@ cout << "the student's password is: " << password << endl;
 
 //out functions
 
-void reserve(spot obj) {
+void reserve(spot& obj) {
 obj.setempty(0);
 }
