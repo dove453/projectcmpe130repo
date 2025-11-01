@@ -59,7 +59,7 @@ while (rloop == 0) {
         cout << "spot is not available, try again and enter the spot you want to reserve:" << endl;
     }
     if (array[in].getempty()==1){
- cout << "spot is empty, reserving it";
+ cout << "spot is empty, reserving it"<<endl;
  reserve(array[in]);
  rloop = 1;
 
