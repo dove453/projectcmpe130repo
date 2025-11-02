@@ -30,6 +30,7 @@ public:
 
 	void setdue(float in);
 	float getdue();
+	float calculatedue();
 
 	void setpay(bool in);
 	bool getpay();
