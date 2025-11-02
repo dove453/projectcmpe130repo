@@ -55,7 +55,7 @@ for (int i = 0; i < 10; i++) {
 while (rloop == 0) {
     cout << "type which spot you want to reserve:" << endl;
     cin >> in;
-    while (in > 20) {
+    while (in >= 20) {
         cout << "spot is not available, try again and enter the spot you want to reserve:" << endl;
          cin >> in;
     }
