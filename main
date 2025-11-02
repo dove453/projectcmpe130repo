@@ -50,7 +50,7 @@ for (int i = 0; i < 10; i++) {
          break;
 
      case 2:
-        int in;
+        int in, inh, inm, ins;
 
 while (rloop == 0) {
     cout << "type which spot you want to reserve:" << endl;
@@ -62,6 +62,34 @@ while (rloop == 0) {
     if (array[in].getempty()==1){
  cout << "spot is empty, reserving it"<<endl;
  reserve(array[in]);
+
+ cout << "how long do you plan to reserve this spot:" << endl;  //max time allowed 1 day, 1 hour, 1 min
+
+
+ cout << "enter # of hours:" << endl;
+ cin >> inh;
+ while (inh > 24) {
+     cout << "invalid input for hours, please enter in # of hours again:" << endl;
+         cin >> inh;
+ }
+ array[in].settimehour(inh);
+
+ cout << "enter # of minutes:" << endl;
+ cin >> inm;
+ while (inm > 60) {
+     cout << "invalid input for minutes, please enter in # of minutes again:" << endl;
+     cin >> inm;
+ }
+ array[in].settimeminute(inm);
+
+ cout << "enter # of seconds:" << endl;
+ cin >> ins;
+ while ( ins > 60) {
+     cout << "invalid input for seconds, please enter in # of seconds again:" << endl;
+     cin >> ins;
+ }
+ array[in].settimesecond(ins);
+
  rloop = 1;
 
 }
