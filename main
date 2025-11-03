@@ -90,6 +90,7 @@ while (rloop == 0) {
  }
  array[in].settimesecond(ins);
 
+array[in].calculatedue();
  rloop = 1;
 
 }
