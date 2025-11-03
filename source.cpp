@@ -65,6 +65,12 @@ float spot::getdue() {
 	return due;
 }
 
+void spot::calculatedue() {
+	int hours = timelimithours + (timelimitminutes / 60) + (timelimitseconds / 360);//hourly rate is 50 cents an hour
+	due = hours * 0.50;                                   //in dollars
+	
+}
+
 //pay
 
 void spot::setpay(bool in) {
