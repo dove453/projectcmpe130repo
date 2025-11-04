@@ -35,6 +35,7 @@ for (int i = 0; i < 10; i++) {
 
  //initialize parking lot functions:
  int input;
+ string cn; //future student attributes: credit card number and its security code
  do {
      cout << "type 1 for displaying the available parking spots, type 2 to reserve a parking spot, type 3 for payment"<<endl;
      cin >> input;
@@ -98,7 +99,20 @@ array[in].calculatedue();
          break;
 
      case 3:
-         cout << "payment"<<endl;
+         int securitycode;
+cout <<"you owe: "<< array[in].getdue()<<"$, PAY NOW!!"<<endl;
+//simulate user pays here via credit card
+cout << "enter in credit card number"<<endl;
+cin >> cn;
+
+cout << "enter in card's security code:" << endl;
+cin >> securitycode;
+
+cout << "Card accepted, processing payment" << endl;
+array[in].setdue(0);
+
+//at this point, assume user leaves the parking spot
+array[in].setempty(1);
          break;
 
       case 4:
