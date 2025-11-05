@@ -33,7 +33,8 @@ for (int i = 0; i < 10; i++) {
 }
 
 do{
-  int loginput;
+  int loginput,id, position=0 ;
+ string first, last, password;
   cout << "type 1 for login, type 2 for signup, type 3 for exit" << endl;
   cin >> loginput;
   switch (loginput) {
@@ -42,7 +43,12 @@ do{
       break;
 
   case 2:
-      cout << "n";
+      if (position > 10) {
+    cout << "database is full and cannot accept anymore requests";
+}
+cout << "enter in your first name"<<endl;
+cin >> first;
+db[position].setfirst(first);
       break;
 
   case 3:
