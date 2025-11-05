@@ -7,7 +7,7 @@ int main()
     spot array[20];
 
      student db[10];
-
+ int programloop = 1;
  //itializie both of these
 
  //array:
@@ -31,6 +31,27 @@ for (int i = 0; i < 10; i++) {
 for (int i = 0; i < 10; i++) {
     db[i].displaystudent();
 }
+
+do{
+  int loginput;
+  cout << "type 1 for login, type 2 for signup, type 3 for exit" << endl;
+  cin >> loginput;
+  switch (loginput) {
+  case 1:
+      cout << "h";
+      break;
+
+  case 2:
+      cout << "n";
+      break;
+
+  case 3:
+
+      return 0;
+      break;
+
+  }
+
 
 
  //initialize parking lot functions:
@@ -116,14 +137,14 @@ array[in].setempty(1);
          break;
 
       case 4:
-     return 0;
+     programloop= 0;
      break;
      }
 
 
- } while (1);
+ } while (programloop==1);
 
 
-return 0;
+}while(1);
 }
 
