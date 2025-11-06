@@ -43,7 +43,7 @@ do{
       break;
 
   case 2:
-      if (position > DBMAX) {
+      if (position > DBMAX-1) {
     cout << "database is full and cannot accept anymore requests";
 }
 cout << "enter in your first name"<<endl;
