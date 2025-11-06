@@ -18,9 +18,7 @@ int main()
      array[i]=spot(0,0,0, false, true, 0, i);
  }
 
- for (int i = 0; i < 20; i++) {
-     array[i].displayspot();
- }
+
 
 
 //initialize a database that will hold 10 students
@@ -28,9 +26,7 @@ for (int i = 0; i < DBMAX; i++) {
     db[i] = student();
 }
 
-for (int i = 0; i < DBMAX; i++) {
-    db[i].displaystudent();
-}
+
 
 do{
   int loginput,id, position=0 ;
