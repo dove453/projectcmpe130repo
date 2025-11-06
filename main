@@ -39,12 +39,27 @@ do{
       break;
 
   case 2:
-      if (position > DBMAX-1) {
-    cout << "database is full and cannot accept anymore requests";
+     if (position < DBMAX) {
+    cout << "database full, cannot add anymore." << endl;
+    break;
 }
-cout << "enter in your first name"<<endl;
-cin >> first;
-db[position].setfirst(first);
+    cout << "at positon" << position;
+    cout << "enter in your first name: " << endl;
+    cin >> first;
+    db[position].setfirst(first);
+
+    cout << "enter in last name: " << endl;
+    cin >> last;
+    db[position].setlast(last);
+
+    cout << "enter in your student id: " << endl;
+    cin >> id;
+    db[position].setid(id);
+
+    cout << "create a new password: " << endl;
+    cin >> password;
+    db[position].setpassword(password);                //do hashing and encryption here
+    position++;
       break;
 
   case 3:
