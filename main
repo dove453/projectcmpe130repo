@@ -1,12 +1,12 @@
 #include <iostream>
 #include "Header.h"  //this is what the header file will be declared with all the nice functions declarations
-
+#define DBMAX 10
 int main()
 {
      //arrays
     spot array[20];
 
-     student db[10];
+     student db[DBMAX];
  int programloop = 1;
  //itializie both of these
 
@@ -24,11 +24,11 @@ int main()
 
 
 //initialize a database that will hold 10 students
-for (int i = 0; i < 10; i++) {
+for (int i = 0; i < DBMAX; i++) {
     db[i] = student();
 }
 
-for (int i = 0; i < 10; i++) {
+for (int i = 0; i < DBMAX; i++) {
     db[i].displaystudent();
 }
 
@@ -43,7 +43,7 @@ do{
       break;
 
   case 2:
-      if (position > 10) {
+      if (position > DBMAX) {
     cout << "database is full and cannot accept anymore requests";
 }
 cout << "enter in your first name"<<endl;
