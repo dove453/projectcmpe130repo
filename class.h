@@ -75,3 +75,6 @@ void displaystudent();
 
 void reserve(spot& obj);
 
+bool idcheck();
+
+bool passcheck();
