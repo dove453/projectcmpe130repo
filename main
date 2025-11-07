@@ -39,7 +39,7 @@ do{
       break;
 
   case 2:
-     if (position < DBMAX) {
+     if (position == DBMAX) {
     cout << "database full, cannot add anymore." << endl;
     break;
 }
