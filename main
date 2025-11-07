@@ -1,6 +1,6 @@
 #include <iostream>
 #include "Header.h"  //this is what the header file will be declared with all the nice functions declarations
-#define DBMAX 4
+#define DBMAX 10
 int main()
 {
      //arrays
