@@ -2,6 +2,14 @@
 #include <iostream>
 #include <string.h>
 using namespace std;
+
+struct passwordh{
+	int key;
+	int password; //put encrypted password in hashtable
+	bool empty;
+
+	passwordh(int a,int b, bool c);
+};
 class spot {
 private:
 	int timelimithours;
@@ -78,3 +86,5 @@ void reserve(spot& obj);
 bool idcheck();
 
 bool passcheck();
+
+int encrypt();
