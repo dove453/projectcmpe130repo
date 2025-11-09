@@ -177,3 +177,11 @@ cout << "the student's password is: " << password << endl;
 void reserve(spot& obj) {
 obj.setempty(0);
 }
+
+//password: stuff
+
+passwordh::passwordh(int a, int b, bool c){
+	key = a;
+	password = b;
+	empty = c;
+}
