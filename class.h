@@ -20,6 +20,10 @@ struct passwordh{
 
 int hashf(int data);
 
+void insert(int value, passwordh array[]);
+
+void rehash(passwordh array[]);
+
 class spot {
 private:
 	int timelimithours;
