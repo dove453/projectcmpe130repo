@@ -185,3 +185,9 @@ passwordh::passwordh(int a, int b, bool c){
 	password = b;
 	empty = c;
 }
+
+passwordh::passwordh() {
+	key = 0;
+	password = 0;
+	empty = 1;
+}
