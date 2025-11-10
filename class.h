@@ -1,6 +1,7 @@
 #pragma once
 #include <iostream>
 #include <string.h>
+#define MSIZE 100
 using namespace std;
 
 struct passwordh{
