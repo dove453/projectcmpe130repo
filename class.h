@@ -8,6 +8,8 @@ struct passwordh{
 	int password; //put encrypted password in hashtable
 	bool empty;
 
+    passwordh();
+
 	passwordh(int a,int b, bool c);
 };
 class spot {
