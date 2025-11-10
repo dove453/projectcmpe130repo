@@ -195,3 +195,9 @@ passwordh::passwordh() {
 int passwordh::getpassword() {
 	return password;
 }
+
+//hash:
+
+int hash(int data) {
+	return data % MSIZE;
+}
