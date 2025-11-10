@@ -3,6 +3,22 @@
 #define DBMAX 10
 int main()
 {
+
+//declare hashtable
+
+passwordh* hashtable = new passwordh[100];
+
+
+
+
+
+//testbed for hashing;
+
+
+
+
+
+
      //arrays
     spot array[20];
 
