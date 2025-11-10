@@ -15,6 +15,11 @@ struct passwordh{
 
 	int getpassword();
 };
+
+//function stuff for hashtable
+
+int hash(int data);
+
 class spot {
 private:
 	int timelimithours;
