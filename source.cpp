@@ -191,3 +191,7 @@ passwordh::passwordh() {
 	password = 0;
 	empty = 1;
 }
+
+int passwordh::getpassword() {
+	return password;
+}
