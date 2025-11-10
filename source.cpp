@@ -201,3 +201,36 @@ int passwordh::getpassword() {
 int hashf(int data) {
 	return data % MSIZE;
 }
+
+void insert(int value, passwordh array[]) {
+
+	//full checker
+	int fullcount = 0;
+	for (int i = 0; i < MSIZE; i++) {
+		if (array[i].empty == 0) {
+			fullcount++;
+		}
+	}
+
+	if (fullcount == MSIZE) {
+		//rehash table
+	}
+	int key = hashf(value);
+
+	//case reg
+	for (int i = 0; i < MSIZE; i++) {
+		
+		if (array[key].empty == 1) {
+			array[key].password = value;
+		}
+		else {
+			key++;
+		}
+	}
+
+	
+
+
+	
+
+}
