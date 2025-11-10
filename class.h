@@ -18,7 +18,7 @@ struct passwordh{
 
 //function stuff for hashtable
 
-int hash(int data);
+int hashf(int data);
 
 class spot {
 private:
