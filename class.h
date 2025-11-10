@@ -11,6 +11,8 @@ struct passwordh{
     passwordh();
 
 	passwordh(int a,int b, bool c);
+
+	int getpassword();
 };
 class spot {
 private:
