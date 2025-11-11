@@ -1,9 +1,9 @@
 #pragma once
 #include <iostream>
 #include <string.h>
-#define MSIZE 100
-using namespace std;
 
+using namespace std;
+int hashsize = 100;
 struct passwordh{
 	int key;
 	int password; //put encrypted password in hashtable
