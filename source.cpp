@@ -202,6 +202,22 @@ int hashf(int data) {
 	return data % MSIZE;
 }
 
+void rehash(passwordh array[]) {
+
+	int size = hashsize + 50;
+	passwordh* temp = new passwordh[hashsize];
+	//transfer data
+	for (int i = 0; i < hashsize; i++){
+		temp[i] = array[i];
+	}
+
+	hashsize = size;                       //up size
+	for (int i = 0; i < hashsize; i++) {   //transfer data back
+		array[i] = temp[i];
+	}
+}
+
+
 void insert(int value, passwordh array[]) {
 
 	//full checker
@@ -213,7 +229,7 @@ void insert(int value, passwordh array[]) {
 	}
 
 	if (fullcount == hashsize) {
-		//rehash table
+		rehash(array);
 	}
 	int key = hashf(value);
 
