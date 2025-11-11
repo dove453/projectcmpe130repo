@@ -206,19 +206,19 @@ void insert(int value, passwordh array[]) {
 
 	//full checker
 	int fullcount = 0;
-	for (int i = 0; i < MSIZE; i++) {
+	for (int i = 0; i < hashsize; i++) {
 		if (array[i].empty == 0) {
 			fullcount++;
 		}
 	}
 
-	if (fullcount == MSIZE) {
+	if (fullcount == hashsize) {
 		//rehash table
 	}
 	int key = hashf(value);
 
 	//case reg
-	for (int i = 0; i < MSIZE; i++) {
+	for (int i = 0; i < hashsize; i++) {
 		
 		if (array[key].empty == 1) {
 			array[key].password = value;
