@@ -6,7 +6,7 @@ int main()
 
 //declare hashtable
 
-passwordh* hashtable = new passwordh[MSIZE];
+passwordh* hashtable = new passwordh[hashsize];
 
 
 
