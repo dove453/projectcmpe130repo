@@ -250,3 +250,12 @@ void insert(int value, passwordh array[]) {
 	
 
 }
+
+bool search(int data, passwordh array[]) {
+	for (int i = 0; i < hashsize; i++) {
+		if (array[i].password == data) {
+			return 1;
+		}
+	}
+	return 0;
+}
