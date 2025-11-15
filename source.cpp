@@ -1,5 +1,5 @@
 #include "Header.h";
-
+int hashsize=100;
 
 
 //***spot section*************
@@ -180,14 +180,14 @@ obj.setempty(0);
 
 //password: stuff
 
-passwordh::passwordh(int a, int b, bool c){
-	key = a;
+passwordh::passwordh(int b, bool c){
+	
 	password = b;
 	empty = c;
 }
 
 passwordh::passwordh() {
-	key = 0;
+
 	password = 0;
 	empty = 1;
 }
@@ -265,7 +265,7 @@ void deleteh(int data, passwordh array[]) {
 		if (array[i].password == data) {
 			array[i].password = 0;
 			array[i].empty = true;
-			array[i].key = 0;
+			
 		}
 	}
 }
