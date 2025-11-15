@@ -5,13 +5,13 @@
 using namespace std;
 extern int hashsize;
 struct passwordh{
-	int key;
+	
 	int password; //put encrypted password in hashtable
 	bool empty;
 
     passwordh();
 
-	passwordh(int a,int b, bool c);
+	passwordh(int b, bool c);
 
 	int getpassword();
 };
