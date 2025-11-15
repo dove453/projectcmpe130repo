@@ -259,3 +259,13 @@ bool search(int data, passwordh array[]) {
 	}
 	return 0;
 }
+
+void deleteh(int data, passwordh array[]) {
+	for (int i = 0; i < hashsize; i++) {
+		if (array[i].password == data) {
+			array[i].password = 0;
+			array[i].empty = true;
+			array[i].key = 0;
+		}
+	}
+}
