@@ -3,7 +3,7 @@
 #include <string.h>
 
 using namespace std;
-int hashsize = 100;
+extern int hashsize;
 struct passwordh{
 	int key;
 	int password; //put encrypted password in hashtable
