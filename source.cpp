@@ -270,3 +270,9 @@ void deleteh(int data, passwordh array[]) {
 		}
 	}
 }
+
+int encrypt(string input) {
+	int passnum = stoi(input);
+	int passnum=+ 21;    
+	return passnum;
+}
