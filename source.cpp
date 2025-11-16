@@ -1,4 +1,5 @@
 #include "Header.h";
+#include <string>
 int hashsize=100;
 
 
