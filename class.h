@@ -102,6 +102,6 @@ void reserve(spot& obj);
 
 bool idcheck();
 
-bool passcheck();
+bool passcheck(string input);
 
-int encrypt();
+int encrypt(string input);
