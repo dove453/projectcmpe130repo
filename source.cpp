@@ -291,3 +291,7 @@ string decrypt(vector<int>input) {
 
 
 }
+
+bool idcheck(string input, student check) {
+
+}
