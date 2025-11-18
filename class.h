@@ -1,7 +1,7 @@
 #pragma once
 #include <iostream>
 #include <string.h>
-
+#include<vector>
 using namespace std;
 extern int hashsize;
 struct passwordh{
@@ -104,4 +104,6 @@ bool idcheck();
 
 bool passcheck(string input);
 
-int encrypt(string input);
+vector<int>encrypt(string input);
+
+string decrypt(int input);
