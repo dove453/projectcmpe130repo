@@ -271,8 +271,23 @@ void deleteh(int data, passwordh array[]) {
 	}
 }
 
-int encrypt(string input) {
-	int passnum = stoi(input);
-	int passnum=+ 21;    
+//encryption and decryption:
+
+vector<int>encrypt(string input) {
+	vector<int>passnum;
+	for (int i = 0; i < input.length(); i++) {
+		cout << (int)input[i] << endl;
+		passnum.push_back((int)input[i]);
+	}
+
+	
+	 passnum.push_back(21);    
 	return passnum;
+}
+
+string decrypt(vector<int>input) {
+	int decrypt = 21;
+	string returns;
+
+
 }
