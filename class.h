@@ -106,4 +106,4 @@ bool passcheck(string input);
 
 vector<int>encrypt(string input);
 
-string decrypt(vector<int>input);
+bool decrypt(vector<int>input);
