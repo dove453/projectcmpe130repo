@@ -6,7 +6,7 @@ using namespace std;
 extern int hashsize;
 struct passwordh{
 	
-	int password; //put encrypted password in hashtable
+	vector<int>password; //put encrypted password in hashtable
 	bool empty;
 
     passwordh();
