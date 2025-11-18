@@ -11,9 +11,9 @@ struct passwordh{
 
     passwordh();
 
-	passwordh(int b, bool c);
+	passwordh(vector<int> b, bool c);
 
-	int getpassword();
+	vector<int>getpassword();
 };
 
 //function stuff for hashtable
