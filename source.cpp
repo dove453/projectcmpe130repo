@@ -181,7 +181,7 @@ obj.setempty(0);
 
 //password: stuff
 
-passwordh::passwordh(int b, bool c){
+passwordh::passwordh(vector<int>b, bool c){
 	
 	password = b;
 	empty = c;
@@ -189,11 +189,11 @@ passwordh::passwordh(int b, bool c){
 
 passwordh::passwordh() {
 
-	password = 0;
+	password = {0};
 	empty = 1;
 }
 
-int passwordh::getpassword() {
+vector<int>passwordh::getpassword() {
 	return password;
 }
 
