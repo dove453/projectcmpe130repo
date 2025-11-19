@@ -20,7 +20,7 @@ struct passwordh{
 
 int hashf(int data);
 
-void insert(int value, passwordh array[]);
+void insert(vector<int>value, passwordh array[]);
 
 void rehash(passwordh array[]);
 
