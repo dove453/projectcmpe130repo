@@ -288,6 +288,24 @@ vector<int>encrypt(string input) {
 string decrypt(vector<int>input) {
 	int decrypt = 21;
 	string returns;
+if (input[input.size() - 1]!=decrypt) {
+	
+}
+else {
+	
+	return "Error: invalid password ";
+}
+
+//decrypt
+
+for (int val : input) {
+	returns += static_cast<char>(val);
+}
+
+
+
+
+return returns;
 
 
 }
