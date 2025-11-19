@@ -219,7 +219,7 @@ void rehash(passwordh array[]) {
 }
 
 
-void insert(int value, passwordh array[]) {
+void insert(vector<int>value, passwordh array[]) {
 
 	//full checker
 	int fullcount = 0;
@@ -232,7 +232,7 @@ void insert(int value, passwordh array[]) {
 	if (fullcount == hashsize) {
 		rehash(array);
 	}
-	int key = hashf(value);
+	int key = hashf(value.size());
 
 	//case reg
 	for (int i = 0; i < hashsize; i++) {
