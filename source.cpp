@@ -288,8 +288,10 @@ vector<int>encrypt(string input) {
 string decrypt(vector<int>input) {
 	int decrypt = 21;
 	string returns;
+	int vectorend = input.size() - 1;
 if (input[input.size() - 1]!=decrypt) {
-	
+	input.erase(input.begin()+vectorend);
+		
 }
 else {
 	
