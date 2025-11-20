@@ -100,7 +100,7 @@ void displaystudent();
 
 void reserve(spot& obj);
 
-bool idcheck();
+bool idcheck(int input, student check);
 
 bool passcheck(string input);
 
