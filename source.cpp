@@ -312,6 +312,11 @@ return returns;
 
 }
 
-bool idcheck(string input, student check) {
-
+bool idcheck(int input, student check) {
+if (check.getid() == input) {
+	return 1;
+}
+else {
+	return 0;
+}
 }
