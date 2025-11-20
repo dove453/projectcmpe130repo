@@ -252,7 +252,7 @@ void insert(vector<int>value, passwordh array[]) {
 
 }
 
-bool search(int data, passwordh array[]) {
+bool search(vector<int>data, passwordh array[]) {
 	for (int i = 0; i < hashsize; i++) {
 		if (array[i].password == data) {
 			return 1;
@@ -261,10 +261,10 @@ bool search(int data, passwordh array[]) {
 	return 0;
 }
 
-void deleteh(int data, passwordh array[]) {
+void deleteh(vector<int>data, passwordh array[]) {
 	for (int i = 0; i < hashsize; i++) {
 		if (array[i].password == data) {
-			array[i].password = 0;
+			array[i].password.empty();
 			array[i].empty = true;
 			
 		}
