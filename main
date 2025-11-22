@@ -9,10 +9,22 @@ int main()
 passwordh* hashtable = new passwordh[hashsize];
 
 
+ string test = "boD78&";
+
+ //testbed for encryption and hashing:
+ vector<int>transfer = encrypt(test);
+ cout << "after encryption of test string boD78&"<<endl;
+
+ for (int i = 0; i < transfer.size(); i++) {
+     cout << transfer[i]<<endl;
+ }
+
+ insert(transfer, hashtable);
+
+ display(hashtable);
 
 
 
-//testbed for hashing;
 
 
 
