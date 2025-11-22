@@ -320,3 +320,15 @@ else {
 	return 0;
 }
 }
+
+
+
+bool passcheck(vector<int>input, string inputs) {
+	string passdecrypt = decrypt(input);
+	if (passdecrypt == inputs) {
+		return 1;
+	}
+	else {
+		return 0;
+	}
+}
