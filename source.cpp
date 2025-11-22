@@ -271,6 +271,15 @@ void deleteh(vector<int>data, passwordh array[]) {
 	}
 }
 
+void display(passwordh array[]) {
+	for (int i = 0; i < hashsize; i++) {
+		cout << "this is the start of password: " << i << endl;
+		for (auto element : array[i].password) {
+			cout << element << endl;
+		}
+	}
+}
+
 //encryption and decryption:
 
 vector<int>encrypt(string input) {
