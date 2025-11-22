@@ -24,7 +24,7 @@ void insert(vector<int>value, passwordh array[]);
 
 void rehash(passwordh array[]);
 
-bool search(vector<int>data, passwordh array[]);
+vector<int>search(vector<int>data, passwordh array[]);
 
 void deleteh(vector<int>data, passwordh array[]);
 
