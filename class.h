@@ -102,7 +102,7 @@ void reserve(spot& obj);
 
 bool idcheck(int input, student check);
 
-bool passcheck(string input);
+bool passcheck(vector<int>input, string inputs);
 
 vector<int>encrypt(string input);
 
