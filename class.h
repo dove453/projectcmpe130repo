@@ -27,6 +27,8 @@ void rehash(passwordh array[]);
 bool search(vector<int>data, passwordh array[]);
 
 void deleteh(vector<int>data, passwordh array[]);
+
+void display(passwordh array[]);
 class spot {
 private:
 	int timelimithours;
