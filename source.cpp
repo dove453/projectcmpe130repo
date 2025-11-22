@@ -276,7 +276,7 @@ void deleteh(vector<int>data, passwordh array[]) {
 vector<int>encrypt(string input) {
 	vector<int>passnum;
 	for (int i = 0; i < input.length(); i++) {
-		cout << (int)input[i] << endl;
+		
 		passnum.push_back((int)input[i]);
 	}
 
