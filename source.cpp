@@ -252,11 +252,14 @@ void insert(vector<int>value, passwordh array[]) {
 
 }
 
-bool search(vector<int>data, passwordh array[]) {
+vector<int>search(vector<int>data, passwordh array[]) {
 	for (int i = 0; i < hashsize; i++) {
 		if (array[i].password == data) {
-			return 1;
+			return  array[i].password;
 		}
+		else {
+	cout << "password is not in the hashtable";
+}
 	}
 	return 0;
 }
