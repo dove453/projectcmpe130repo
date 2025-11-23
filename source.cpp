@@ -253,19 +253,15 @@ void insert(vector<int>value, passwordh array[]) {
 }
 
 vector<int>search(vector<int>data, passwordh array[]) {
-	bool found=0;
+	
 	for (int i = 0; i < hashsize; i++) {
-		if (array[i].password == data) {
+		if (!array[i].empty && array[i].password == data) {
 			return  array[i].password;
-			found=1;
-			break;
 		}
 		
 	}
-	if(found==0){
-		cout<< "password hasn't been found";
-			}
-	return 0;
+	cout<<"password hasn't been found"<<endl;
+	return {};
 }
 
 void deleteh(vector<int>data, passwordh array[]) {
