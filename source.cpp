@@ -303,25 +303,18 @@ string decrypt(vector<int>input) {
 	int decrypt = 21;
 	string returns;
 	int vectorend = input.size() - 1;
-if (input[input.size() - 1]!=decrypt) {
+if (input[vectorend]==decrypt) {
 	input.erase(input.begin()+vectorend);
-		
+	for (int val : input) {
+	returns += static_cast<char>(val);
+}
+return returns
 }
 else {
 	
 	return "Error: invalid password ";
 }
 
-//decrypt
-
-for (int val : input) {
-	returns += static_cast<char>(val);
-}
-
-
-
-
-return returns;
 
 
 }
