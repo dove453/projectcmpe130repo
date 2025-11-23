@@ -240,6 +240,7 @@ void insert(vector<int>value, passwordh array[]) {
 		if (array[key].empty == 1) {
 			array[key].password = value;
 			array[key].empty = false;
+			break;
 		}
 		else {
 			key++;
