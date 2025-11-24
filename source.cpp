@@ -302,6 +302,10 @@ vector<int>encrypt(string input) {
 string decrypt(vector<int>input) {
 	int decrypt = 21;
 	string returns;
+
+	if (input.empty()) {
+	return "error, empty vector";
+}
 	int vectorend = input.size() - 1;
 if (input[vectorend]==decrypt) {
 	input.erase(input.begin()+vectorend);
