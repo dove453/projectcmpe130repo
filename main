@@ -70,6 +70,7 @@ for (int i = 0; i < DBMAX; i++) {
 do{
   int loginput,id, signinid ;
  string first, last, password, signinpassword;
+vector<int>transfer2;
   cout << "type 1 for login, type 2 for signup, type 3 for exit" << endl;
   cin >> loginput;
   switch (loginput) {
@@ -111,8 +112,13 @@ do{
     cout << " Invalid, enter in unique password again: " << endl;
     cin >> password;
 }
-    db[position].setpassword(password);                //do hashing and encryption here
+    db[position].setpassword(password);  //do hashing and encryption here
+  transfer2 = encrypt(password);
+ insert(transfer2, hashtable);
+ cout << "the hashtable now looks like this:";
+ display(hashtable);
     position++;
+   transfer2.clear();
       break;
 
   case 3:
