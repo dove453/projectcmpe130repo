@@ -23,6 +23,16 @@ passwordh* hashtable = new passwordh[hashsize];
 
  display(hashtable);
 
+ vector<int>retrive = search(transfer, hashtable);
+ 
+ cout << "retrived password is(after calling search function): " << endl;
+ for (int i = 0; i < retrive.size(); i++) {
+     cout << retrive[i] << endl;
+ }
+ string decrypted = decrypt(retrive);
+
+ cout << "the string decrypted is: " << decrypted<<endl;
+
 
 
 
@@ -66,6 +76,15 @@ do{
   case 1:
        cout << "enter in your id:"<<endl;
  cin >> signinid;
+
+ cout << "enter in password: " << endl;
+ cin >> password;
+ while (passcheck(password, hashtable)!=true) {
+     cout << " Invalid, enter in password again: " << endl;
+     cin >> password;
+ }
+
+ cout << "logging in" << endl;
       break;
 
   case 2:
@@ -73,7 +92,7 @@ do{
     cout << "database full, cannot add anymore." << endl;
     break;
 }
-    cout << "at positon" << position;
+    
     cout << "enter in your first name: " << endl;
     cin >> first;
     db[position].setfirst(first);
@@ -88,6 +107,10 @@ do{
 
     cout << "create a new password: " << endl;
     cin >> password;
+    while (passcheck(password, hashtable) == true) {
+    cout << " Invalid, enter in unique password again: " << endl;
+    cin >> password;
+}
     db[position].setpassword(password);                //do hashing and encryption here
     position++;
       break;
