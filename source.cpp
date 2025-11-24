@@ -200,7 +200,7 @@ vector<int>passwordh::getpassword() {
 //hash:
 
 int hashf(int data) {
-	return data % MSIZE;
+	return data % hashsize;
 }
 
 void rehash(passwordh array[]) {
