@@ -328,10 +328,11 @@ else {
 }
 }
 
+bool passcheck(string inputs, passwordh array[]) {
 
-
-bool passcheck(vector<int>input, string inputs) {
-	string passdecrypt = decrypt(input);
+	vector<int>passincrypt = encrypt(inputs);
+	vector<int>found = search(passincrypt, array);
+	string passdecrypt = decrypt(found);
 	if (passdecrypt == inputs) {
 		return 1;
 	}
@@ -339,3 +340,5 @@ bool passcheck(vector<int>input, string inputs) {
 		return 0;
 	}
 }
+
+
