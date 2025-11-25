@@ -134,7 +134,7 @@ vector<int>transfer2;
  int input;
  string cn; //future student attributes: credit card number and its security code
  do {
-     cout << "type 1 for displaying the available parking spots, type 2 to reserve a parking spot, type 3 for payment"<<endl;
+     cout << "type 1 for displaying the available parking spots, type 2 to reserve a parking spot, type 3 for payment, type 4 for exit"<<endl;
      cin >> input;
      int rloop = 0;
      switch(input){
